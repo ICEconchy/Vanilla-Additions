@@ -1,0 +1,17 @@
+package com.chrismin13.vanillaadditions.items.chisels;
+
+import com.chrismin13.vanillaadditions.abilities.ChiselAbilities;
+import com.chrismin13.vanillaadditions.items.obsidian.ObsidianItem;
+import org.bukkit.Material;
+import us.fihgu.toolbox.item.DamageableItem;
+
+public class ObsidianChisel
+  extends ObsidianItem implements ChiselAbilities
+{
+  public ObsidianChisel()
+  {
+    super(DamageableItem.IRON_PICKAXE, "vanilla_additions:obsidian_chisel", "Obsidian Chisel", "obsidian_chisel");
+    
+    modifyCustomItem(this, Material.OBSIDIAN);
+  }
+}
